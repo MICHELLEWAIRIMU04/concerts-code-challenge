@@ -126,10 +126,3 @@ class Venue:
             raise ValueError("Concert must be an instance of Concert class")
 
 
-if __name__ == "__main__":
-    band1 = Band("The Rockers", "New York")
-    venue1 = Venue("Madison Square Garden", "New York")
-    concert1 = band1.play_in_venue(venue1, "2025-06-15")
-    
-    print(concert1.introduction())
-    print([band.name for band in venue1.bands()])
